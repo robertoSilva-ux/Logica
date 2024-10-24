@@ -20,8 +20,6 @@ public class Exec7 {
         
         
 
-        // verificando os descontos
-
         if (tipoCombustivel == "A"){
             if (litros <= 20){
                 percDesconto = 0.03;
