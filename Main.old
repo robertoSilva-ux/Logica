@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);  
+
+
+
+        // Lendo o valor do raio
+        double raio = scanner.nextDouble();
+
+        // Calculando a área
+        double pi = 3.14159;
+        double area = pi * raio * raio;
+
+        // Formatando a saída com 4 casas decimais
+        System.out.printf("A=%.4f\n", area);
+
+        scanner.close();
+    }
+}
+
