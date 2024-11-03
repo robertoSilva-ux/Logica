@@ -6,7 +6,7 @@ public class Lista415 {
         int divisor = 0, numero, n = 1;
         
         System.out.println("Escreva um número:");
-        numero = in.nextInt();;
+        numero = in.nextInt();
 
         while (n <= numero){
             if (numero % n == 0){
