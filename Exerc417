@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Exerc417 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        float valorHoraNormal, horasTrabalhadas, pagamento, horasExtras, valorHoraExtra;
+
+        System.out.print("Digite o número de empregados: ");
+        int numEmpregados = in.nextInt();
+
+        while (numEmpregados > 0) {
+            System.out.println("\nEmpregado " + i);
+            System.out.print("Digite o valor da hora normal: ");
+            valorHoraNormal = scanner.nextDouble();
+            System.out.print("Digite o número de horas trabalhadas: ");
+            horasTrabalhadas = scanner.nextDouble();
+
+            if (horasTrabalhadas <= 40) {
+                pagamento = horasTrabalhadas * valorHoraNormal;
+            } else {
+                horasExtras = horasTrabalhadas - 40;
+                valorHoraExtra = valorHoraNormal * 1.5;
+                pagamento = 40 * valorHoraNormal + horasExtras * valorHoraExtra;
+            }
+
+            System.out.printf("O pagamento bruto do empregado %d é: R$ %.2f\n", i, pagamento);
+
+            numEmpregados--;
+        }
+
+        scanner.close();
+    }
+}
